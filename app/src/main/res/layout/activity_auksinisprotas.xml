@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainAuksinisProtas"
+    android:background="@drawable/bluesky"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/gamePicture"
+        android:layout_width="378dp"
+        android:layout_height="272dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/auksinisprotas"
+        />
+
+    <Button
+        android:id="@+id/buttonTaisykles"
+        android:layout_width="336dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:text="Taisyklės"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamePicture" />
+    <ImageView
+        android:id="@+id/buttonTaisyklesBackground"
+        android:layout_width="336dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/goldblock1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamePicture"
+        />
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="336dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="Žaisti"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTaisykles"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonTaisykles"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTaisykles" />
+    <ImageView
+        android:id="@+id/buttonPlayBackground"
+        android:layout_width="336dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/goldblock1"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTaisykles"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonTaisykles"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTaisykles"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
